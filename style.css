@@ -1,0 +1,33 @@
+table {
+  border: 8px solid rgb(41, 0, 128);
+  width: 70%;
+}
+img {
+  height: 500px;
+  width: 100%;
+}
+.style-div {
+  height: 200px;
+  width: 40%;
+  background-color: aquamarine;
+  margin-left: 100px;
+  border: 2px solid green;
+}
+#text-para {
+  height: 200px;
+  width: 40%;
+  background-color: rgb(197, 200, 41);
+  margin-left: 100px;
+}
+.style-div .content{
+/* padding-top:40px ;
+padding-left: 50px;
+padding-bottom: 50px;
+padding-right: 60px; */
+padding: 70px 70px;
+
+}
+
+
+/* class
+id */
