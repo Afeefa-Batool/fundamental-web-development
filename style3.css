@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Custom overlay for carousel images */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adjust overlay opacity */
+    z-index: 1;
+  }
+  
+  /* Adjust carousel caption */
+  .carousel-caption {
+    z-index: 2; /* Ensure caption is above overlay */
+  }
+  
+  /* Style the caption text */
+  .carousel-caption h2 {
+    font-size: 60px; /* Increase heading size */
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 25px; /* Increase paragraph size */
+  }
+  
+  /* Adjust carousel controls height to align with images */
+  .carousel-control-prev,
+  .carousel-control-next {
+    height: 500px;
+  }
+  

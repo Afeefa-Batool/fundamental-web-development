@@ -3,85 +3,654 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>abc</title>
+    <title>Document</title>
     <link
-      rel="shortcut icon"
-      href="./images/tracking.png"
-      type="image/x-icon"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <style>
-        table{
-            border: 2px solid green;
-            width: 100%;
-        }
-    </style> -->
+    <link rel="stylesheet" href="style3.css" />
   </head>
   <body>
-    <div class="style-div">
-      <p class="content">first lecture</p>
+    <!-- ======navbar===== -->
+    <!-- <nav class="navbar navbar-light bg-light  navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Home</a>
+          </li>
+       
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">About Us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Contact</a>
+          </li>
+       
+        
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
+  </nav>
+  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <!-- Navbar brand or logo -->
+        <a class="navbar-brand" href="index.html"
+          ><img
+            src="./images/tracking.png"
+            alt=""
+            srcset=""
+            style="height: 60px; width: 60px"
+        /></a>
 
-    <!-- <div id="text-para">gcfhgfh</div>
-<div class="style-div">first lecture</div> -->
-    <h1>hello world</h1>
-    <h2>dgdfg</h2>
-    <h3>dfgdf</h3>
-    <h4>sdfdg</h4>
-    <h5>fdgfdg</h5>
-    <h6>dfgdf</h6>
+        <!-- Toggler for responsive navbar -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <p>
-      It is a long established fact that a reader will be distracted by the
-      readable content of a page when looking at its layout. The point of using
-      Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-      as opposed to using 'Content here, content here', making it look like
-      readable English. Many desktop publishing packages and web page editors
-      now use Lorem Ipsum as their default model text, and a search for 'lorem
-      ipsum' will uncover many web sites still in their infancy. Various
-      versions have evolved over the years, sometimes by accident, sometimes on
-      purpose (injected humour and the like).
-    </p>
-    <a href="https://www.youtube.com/live/tgFI2s0YJUs">click here</a>
-    <img src="./images/elvenlabaipng.png" alt="some picture here" />
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-    <ul>
-      <li>fdgdf</li>
-      <li>dfgdfg</li>
-      <li>dgfdg</li>
-    </ul>
+    <!-- =======carasoul====== -->
 
-    <ol>
-      <li>fdgdf</li>
-      <li>dfgdfg</li>
-      <li>dgfdg</li>
-    </ol>
-    <dl>
-      <dt>Coffee</dt>
-      <dd>- black hot drink</dd>
-      <dt>Milk</dt>
-      <dd>- white cold drink</dd>
-    </dl>
-    <!-- =====inline styling===== -->
-    <table>
-      <tr style="border: 1px solid black">
-        <th>country</th>
-        <th>code</th>
-        <th>location</th>
-      </tr>
-      <tr>
-        <td>ff</td>
-        <td>dsf</td>
-        <td>fdg</td>
-      </tr>
-      <tr>
-        <td>ffsddsgtdt</td>
-        <td>dsfdfgfdg</td>
-        <td>fdgdfds</td>
-      </tr>
-    </table>
-    <!-- inline css
-  internal css
-  external css -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide custom-carousel-height"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://i.ytimg.com/vi/ofbRcTQB7gU/maxresdefault.jpg"
+            class="d-block w-100 img-fluid img-responsive"
+            alt="..."
+            style="height: 500px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>First slide label</h2>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.ytimg.com/vi/ofbRcTQB7gU/maxresdefault.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="height: 500px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Second slide label</h2>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.ytimg.com/vi/ofbRcTQB7gU/maxresdefault.jpg"
+            class="d-block w-100"
+            alt="..."
+            style="height: 500px"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>Third slide label</h2>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+        style="height: 500px"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- ======== gallery ======= -->
+    <!-- <div class="container-fluid">
+      <div class="card border-0 shadow" style="width: 18rem">
+        <img
+          src="https://www.t-systems.com/resource/image/996206/ratio3x2/1440/960/8d2f1c89ad0e6e8097cd73d17ed386e/B2CA46AFC8A46A567F5408742646F54E/im-redefining-automotive-business-with-modernized-technology.jpg"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="container mt-5">
+      <h1>Our Services</h1>
+      <div class="row g-5">
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="card border-0 shadow mt-2 mr-2">
+            <img
+              src="https://www.t-systems.com/resource/image/996206/ratio3x2/1440/960/8d2f1c89ad0e6e8097cd73d17ed386e/B2CA46AFC8A46A567F5408742646F54E/im-redefining-automotive-business-with-modernized-technology.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+          <div class="card border-0 shadow mt-2 mr-2">
+            <img
+              src="https://www.t-systems.com/resource/image/996206/ratio3x2/1440/960/8d2f1c89ad0e6e8097cd73d17ed386e/B2CA46AFC8A46A567F5408742646F54E/im-redefining-automotive-business-with-modernized-technology.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <div class="card border-0 shadow mt-2">
+            <img
+              src="https://www.t-systems.com/resource/image/996206/ratio3x2/1440/960/8d2f1c89ad0e6e8097cd73d17ed386e/B2CA46AFC8A46A567F5408742646F54E/im-redefining-automotive-business-with-modernized-technology.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3">
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+        <div class="col">
+          <div class="p-3 border bg-light">Row column</div>
+        </div>
+      </div>
+    </div>
+    <!-- ======modal===== -->
+   <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWNebMopLCNq-cM-sNbldt1fP3NE8Ohckbig&s" alt="" srcset="" class="img-fluid img-responsive" style="width: 100%;">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- =====form==== -->
+    <!-- <div class="container">
+    <label for="">enter email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+
+      <fieldset disabled> <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="enter email"></fieldset>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">@</span>
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <span class="input-group-text" id="basic-addon2">@example.com</span>
+      </div>
+      
+      <label for="basic-url" class="form-label">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+      </div>
+      
+      <div class="input-group mb-3">
+        <span class="input-group-text">$</span>
+        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+        <span class="input-group-text">.00</span>
+      </div>
+      
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+        <span class="input-group-text">@</span>
+        <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+      </div>
+      
+      <div class="input-group">
+        <span class="input-group-text">With textarea</span>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+    </div> -->
+
+    <div class="container mt-4">
+      <h1>Contact Us</h1>
+      <div class="card p-4 border-0 shadow">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="1234 Main St"
+            />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Apartment, studio, or floor"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity" />
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip" />
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ======containers========= -->
+    <!-- =====our team ===== -->
+    <!-- Team 1 - Bootstrap Brain Component -->
+    <section class="bg-light py-3 py-md-5 py-xl-8">
+      <div class="container">
+        <div class="row justify-content-md-center">
+          <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+            <h2 class="mb-4 display-5 text-center">Our Team</h2>
+            <p class="text-secondary mb-5 text-center lead fs-4">
+              We are a group of innovative, experienced, and proficient teams.
+              You will love to collaborate with us.
+            </p>
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container overflow-hidden">
+        <div class="row gy-4 gy-lg-0 gx-xxl-5">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5QDzt-JYNhuLn7Mqchny1cc1YNoqjTtN2g&s"
+                    alt="Flora Nyra"
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Flora Nyra</h4>
+                    <p class="text-secondary mb-0">Product Manager</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5QDzt-JYNhuLn7Mqchny1cc1YNoqjTtN2g&s"
+                    alt="Evander Mac"
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Evander Mac</h4>
+                    <p class="text-secondary mb-0">Art Director</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5QDzt-JYNhuLn7Mqchny1cc1YNoqjTtN2g&s"
+                    alt="Taytum Elia"
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Taytum Elia</h4>
+                    <p class="text-secondary mb-0">Investment Planner</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div
+              class="card border-0 border-bottom border-primary shadow-sm overflow-hidden"
+            >
+              <div class="card-body p-0">
+                <figure class="m-0 p-0">
+                  <img
+                    class="img-fluid"
+                    loading="lazy"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_5QDzt-JYNhuLn7Mqchny1cc1YNoqjTtN2g&s"
+                    alt="Wylder Elio"
+                  />
+                  <figcaption class="m-0 p-4">
+                    <h4 class="mb-1">Wylder Elio</h4>
+                    <p class="text-secondary mb-0">Financial Analyst</p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====footer===== -->
+    <footer class="bg-body-tertiary text-center">
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!-- Section: Images -->
+        <section class="">
+          <div class="row">
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/113.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/111.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/112.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/114.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/115.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-12 mb-4 mb-md-0">
+              <div
+                data-mdb-ripple-init
+                class="bg-image hover-overlay shadow-1-strong rounded"
+                data-ripple-color="light"
+              >
+                <img
+                  src="https://mdbcdn.b-cdn.net/img/new/fluid/city/116.webp"
+                  class="w-100"
+                />
+                <a href="#!">
+                  <div
+                    class="mask"
+                    style="background-color: rgba(251, 251, 251, 0.2)"
+                  ></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Section: Images -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2020 Copyright:
+        <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
