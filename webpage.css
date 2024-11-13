@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: "Italianno", serif;
+}
+.hero-section {
+  background: url("https://t4.ftcdn.net/jpg/07/04/32/75/360_F_704327527_we7zii54JwFou6c7zhYEMJbFA1lACJJ0.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+ display: flex;
+ align-items: center;
+  position: relative;
+  background-size: cover;
+}
+.hero-overlay{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.hero-content{
+    position: relative;
+    z-index: 2;
+}
+.hero-text{
+    color:white;
+    font-family: "Italianno", serif;
+    font-weight: 800;
+  font-weight: bold;
+  font-size: 100px;
+
+}
+.hero-para{
+    color: white;
+    font-family: "Italianno", serif;
+    font-size: 20px;
+}
+.transparent-navbar {
+    background-color: transparent;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+
+  }
+  .navbar-light .navbar-nav .nav-link {
+    color: white;
+  }
+  
+  .navbar-light .navbar-nav .nav-link.active {
+    color: #f8f9fa; /* Adjust for the active link color */
+  }
+  .clip-image{
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+    height: 500px;
+  }
